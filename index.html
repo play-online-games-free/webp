@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WebP Converter</h1>
+        <div id="drop-zone" class="drop-zone">
+            <p>Drag and drop your image here, paste it, or click to upload</p>
+            <input type="file" id="file-input" accept="image/png, image/jpeg" hidden>
+        </div>
+        <div id="preview" class="preview" style="display: none;">
+            <p>Click the image below to download:</p>
+            <a id="download-link" download="converted.webp">
+                <img id="preview-image" alt="Converted image preview">
+            </a>
+        </div>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
